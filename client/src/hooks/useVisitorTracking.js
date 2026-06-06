@@ -1,8 +1,7 @@
 import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
-const API_URL =
-  import.meta.env.VITE_TRACKER_API_URL || "http://localhost:5000/api/v1";
+const API_URL = import.meta.env.VITE_TRACKER_API_URL;
 
 const isNewSession = () => {
   if (sessionStorage.getItem("site_session")) return false;
@@ -14,6 +13,7 @@ export const useVisitorTracking = () => {
   const location = useLocation();
 
   useEffect(() => {
+    if (!API_URL) return;
     fetch(`${API_URL}/visitors/track`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -25,6 +25,7 @@ export const useVisitorTracking = () => {
   }, [location.pathname]);
 
   useEffect(() => {
+    if (!API_URL) return;
     const interval = setInterval(() => {
       fetch(`${API_URL}/visitors/heartbeat`, {
         method: "POST",
@@ -32,7 +33,6 @@ export const useVisitorTracking = () => {
         body: "{}",
       }).catch(() => {});
     }, 30000);
-
     return () => clearInterval(interval);
   }, []);
 };

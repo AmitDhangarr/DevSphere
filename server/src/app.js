@@ -18,7 +18,7 @@ app.use(
   cors({
     origin: (origin, cb) => {
       if (!origin || ALLOWED_ORIGINS.includes(origin)) return cb(null, true);
-      cb(new Error(`CORS blocked: ${origin}`));
+      cb(null, false);
     },
     methods: ['GET', 'POST', 'PATCH', 'DELETE'],
     allowedHeaders: ['Content-Type', 'X-Admin-Key'],
@@ -28,12 +28,10 @@ app.use(express.json({ limit: '10kb' }));
 
 app.use('/api/v1', routes);
 
-// 404
 app.use((req, res) => {
   res.status(404).json({ success: false, message: 'Route not found' });
 });
 
-// Global error handler
 app.use((err, req, res, next) => {
   if (err.name === 'ValidationError') {
     return res.status(422).json({ success: false, message: err.message });

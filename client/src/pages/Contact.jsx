@@ -1,20 +1,20 @@
-import { motion } from "framer-motion";
-import {
-  Mail,
-  Phone,
-  MapPin,
-  Github,
-  Linkedin,
-  MessageCircle,
-  Clock,
-  Send,
-  MessageSquare,
-} from "lucide-react";
-import { useState } from "react";
 import { CONTACT_INFO, OFFICE_HOURS } from "@/config/contact";
 import { validateContactForm } from "@/utils/helpers";
+import { motion } from "framer-motion";
+import {
+  Clock,
+  Github,
+  Linkedin,
+  Mail,
+  MapPin,
+  MessageCircle,
+  MessageSquare,
+  Phone,
+  Send,
+} from "lucide-react";
+import { useState } from "react";
 
-const API_URL = import.meta.env.VITE_API_URL || "";
+const API_URL = import.meta.env.VITE_API_URL;
 const INITIAL_FORM = { name: "", email: "", subject: "", message: "" };
 
 const Contact = () => {
@@ -81,6 +81,11 @@ const Contact = () => {
       return;
     }
 
+    if (!API_URL) {
+      setSubmitStatus("error");
+      return;
+    }
+
     setIsSubmitting(true);
 
     try {
@@ -97,7 +102,6 @@ const Contact = () => {
         setFormData(INITIAL_FORM);
         setErrors({});
       } else {
-        // Surface server-side validation errors if any
         if (data.errors?.length) {
           const serverErrors = {};
           data.errors.forEach(({ field, message }) => {
@@ -318,7 +322,7 @@ const Contact = () => {
                 </label>
                 <textarea
                   id="message"
-                  rows={6}
+                  rows={5}
                   className={`w-full px-4 py-2.5 rounded-lg bg-white/5 border ${errors.message ? "border-red-500" : "border-white/10"} focus:border-white/20 focus:ring-1 focus:ring-white/20 outline-none transition-colors resize-none text-sm sm:text-base`}
                   value={formData.message}
                   onChange={handleChange("message")}
@@ -328,13 +332,42 @@ const Contact = () => {
                 )}
               </div>
 
+              {submitStatus === "success" && (
+                <motion.div
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  className="p-4 bg-green-500/10 border border-green-500/20 rounded-lg text-green-400 text-sm"
+                >
+                  Message sent successfully! I'll get back to you soon.
+                </motion.div>
+              )}
+
+              {submitStatus === "error" && (
+                <motion.div
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  className="p-4 bg-red-500/10 border border-red-500/20 rounded-lg text-red-400 text-sm"
+                >
+                  Failed to send message. Please try emailing directly at{" "}
+                  <a
+                    href={`mailto:${CONTACT_INFO.email}`}
+                    className="underline hover:text-red-300"
+                  >
+                    {CONTACT_INFO.email}
+                  </a>
+                </motion.div>
+              )}
+
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full px-6 py-3 bg-white text-black rounded-lg font-medium hover:bg-gray-100 transition-colors flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed text-sm sm:text-base"
+                className="w-full flex items-center justify-center gap-2 px-6 py-3 bg-white text-black rounded-lg font-medium hover:bg-gray-100 transition-colors disabled:opacity-50 disabled:cursor-not-allowed text-sm sm:text-base"
               >
                 {isSubmitting ? (
-                  "Sending..."
+                  <>
+                    <div className="w-4 h-4 border-2 border-black/30 border-t-black rounded-full animate-spin" />
+                    Sending...
+                  </>
                 ) : (
                   <>
                     <Send className="w-4 h-4" />
@@ -342,32 +375,6 @@ const Contact = () => {
                   </>
                 )}
               </button>
-
-              {submitStatus === "success" && (
-                <motion.p
-                  initial={{ opacity: 0, y: 10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  className="text-green-400 text-center text-sm sm:text-base"
-                >
-                  Message sent! I'll get back to you within 24–48 hours.
-                </motion.p>
-              )}
-
-              {submitStatus === "error" && (
-                <motion.p
-                  initial={{ opacity: 0, y: 10 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  className="text-red-400 text-center text-sm sm:text-base"
-                >
-                  Something went wrong. Please email me directly at{" "}
-                  <a
-                    href={`mailto:${CONTACT_INFO.email}`}
-                    className="underline"
-                  >
-                    {CONTACT_INFO.email}
-                  </a>
-                </motion.p>
-              )}
             </form>
           </motion.div>
         </div>

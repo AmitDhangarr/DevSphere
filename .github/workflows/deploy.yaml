@@ -35,4 +35,5 @@ jobs:
             fi
             cd /home/amitdhangar531/DevSphere
             git pull https://AmitDhangarr:${{ secrets.GH_TOKEN }}@github.com/AmitDhangarr/DevSphere.git main
+            cd server
             sudo docker compose up -d --build

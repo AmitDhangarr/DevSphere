@@ -31,8 +31,8 @@ jobs:
               sudo usermod -aG docker amitdhangar531
             fi
             if [ ! -d "/home/amitdhangar531/DevSphere" ]; then
-              git clone https://github.com/AmitDhangarr/DevSphere.git /home/amitdhangar531/DevSphere
+              git clone https://AmitDhangarr:${{ secrets.GH_TOKEN }}@github.com/AmitDhangarr/DevSphere.git /home/amitdhangar531/DevSphere
             fi
             cd /home/amitdhangar531/DevSphere
-            git pull origin main
+            git pull https://AmitDhangarr:${{ secrets.GH_TOKEN }}@github.com/AmitDhangarr/DevSphere.git main
             sudo docker compose up -d --build

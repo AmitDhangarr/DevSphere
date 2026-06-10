@@ -22,6 +22,16 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           port: 22
           script: |
+            if ! command -v git &> /dev/null; then
+              sudo apt update && sudo apt install git -y
+            fi
+            if ! command -v docker &> /dev/null; then
+              curl -fsSL https://get.docker.com | sh
+              sudo usermod -aG docker amitdhangar531
+            fi
+            if [ ! -d "/home/amitdhangar531/DevSphere" ]; then
+              git clone https://github.com/AmitDhangarr/DevSphere.git /home/amitdhangar531/DevSphere
+            fi
             cd /home/amitdhangar531/DevSphere
             git pull origin main
             sudo docker compose up -d --build

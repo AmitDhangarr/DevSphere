@@ -1,0 +1,27 @@
+name: "Deployment of Portfolio - DevSphere"
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "server/**"
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Deploy by SSH
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.SSH_HOST }}
+          username: ubuntu
+          key: ${{ secrets.SSH_KEY }}
+          port: 22
+          script: |
+            cd /home/ubuntu/DevSphere
+            git pull origin main
+            sudo docker compose up -d --build

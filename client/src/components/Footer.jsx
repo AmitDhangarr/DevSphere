@@ -30,11 +30,11 @@ const Footer = () => {
             <Link to="/" className="flex items-center space-x-3">
               <Code2 className="w-8 h-8 text-white" aria-hidden="true" />
               <span className="text-xl font-bold text-white">
-                Niladri Chatterjee
+              Amit Dhangar
               </span>
             </Link>
             <p className="text-sm text-gray-400">
-              Software Developer based in Kolkata, WB, India.
+              Software Developer based in Gurgoan, HR, India.
             </p>
           </div>
 
@@ -138,7 +138,7 @@ const Footer = () => {
         <div className="border-t border-white/10 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-sm text-gray-400">
-              © {currentYear} Niladri Chatterjee. All rights reserved.
+              © {currentYear} Amit Dhangar. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <span className="text-sm text-gray-400 flex items-center gap-2">
@@ -150,7 +150,7 @@ const Footer = () => {
                 >
                   <path d="M12 1L24 22H0L12 1Z" />
                 </svg>
-                Niladri's Portfolio
+                Amit's Portfolio
               </span>
             </div>
           </div>

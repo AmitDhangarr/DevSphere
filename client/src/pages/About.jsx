@@ -8,12 +8,12 @@ import { Link } from "react-router-dom";
 const achievements = [
   {
     icon: <Code2 className="w-6 h-6" />,
-    title: "10+ Projects",
+    title: "6+ Projects",
     description: "Completed full-stack web applications",
   },
   {
     icon: <Briefcase className="w-6 h-6" />,
-    title: "3+ Internships",
+    title: "1+ Internships",
     description: "Professional work experience",
   },
   {
@@ -33,8 +33,8 @@ const interests = [
 ];
 
 const quickFacts = [
-  "Based in Kolkata, WB, India",
-  "B.Tech in Computer Science",
+  "Based in Gurgoan, HR, India",
+  "BCA in Computer Science",
   "CGPA: 8.48",
 ];
 
@@ -52,7 +52,7 @@ const About = () => {
           <div className="aspect-square overflow-hidden rounded-2xl">
             <img
               src={profileImg}
-              alt="Niladri Chatterjee"
+              alt="Amit Dhangar"
               width={600}
               height={600}
               className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"

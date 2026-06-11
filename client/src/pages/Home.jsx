@@ -57,7 +57,7 @@ const Home = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          Niladri Chatterjee
+          Amit Dhangar
         </motion.h1>
 
         <motion.h2

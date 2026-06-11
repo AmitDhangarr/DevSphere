@@ -52,7 +52,7 @@ const Navbar = () => {
           <div className="flex h-16 items-center justify-between">
             <Link to="/" className="flex items-center space-x-3">
               <Code2 className="w-8 h-8 text-white" aria-hidden="true" />
-              <span className="text-xl font-bold text-white">Niladri</span>
+              <span className="text-xl font-bold text-white">Amit Dhangar</span>
             </Link>
 
             <div className="hidden md:flex items-center space-x-6">

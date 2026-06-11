@@ -1,14 +1,14 @@
 export const CONTACT_INFO = {
-  email: "code.niladri@gmail.com",
-  phone: "+91 62965 54939",
-  phoneRaw: "+916296554939",
-  whatsapp: "+916296554939",
-  location: "Kolkata, West Bengal, India",
+  email: "amitdhangar.dev@gmail.com",
+  phone: "+91 9411401611",
+  phoneRaw: "+9411401611",
+  whatsapp: "+9411401611",
+  location: "Gurgaon,Haryana,India",
   timezone: "IST (UTC+5:30)",
-  github: "https://github.com/niladri-1",
-  linkedin: "https://linkedin.com/in/niladri1",
-  twitter: "@niladri_dev",
-  linkedInFollowers: "4000+",
+  github: "https://github.com/AmitDhangarr",
+  linkedin: "https://linkedin.com/in/amitdhangarr",
+  twitter: "AmitDhangarr",
+  linkedInFollowers: "1000+",
 };
 
 export const OFFICE_HOURS = {

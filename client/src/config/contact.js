@@ -1,7 +1,7 @@
 export const CONTACT_INFO = {
   email: "amitdhangar.dev@gmail.com",
   phone: "+91 9411XXXX11",
-  phoneRaw: "+9411XXXX11",
+  phoneRaw: "+9411XXXX11",  
   whatsapp: "+9411XXXX11",
   location: "Etawah,Uttar Pradesh,India",
   timezone: "IST (UTC+5:30)",

@@ -33,7 +33,7 @@ const educationData = [
       "Networking",
     ],
     description:
-      "Currently pursuing a Bachelor of Computer Applications at CCSPG Heworna, building on a strong academic foundation in computer science with a focus on software development, problem-solving, and real-world applications. Engaging in hands-on projects, coding challenges, and practical learning experiences has sharpened technical and analytical skills throughout this journey.",
+      "Currently pursuing a Bachelor of Computer Applications at CCSPG Henwara, building on a strong academic foundation in computer science with a focus on software development, problem-solving, and real-world applications. Engaging in hands-on projects, coding challenges, and practical learning experiences has sharpened technical and analytical skills throughout this journey.",
   },
   {
     id: 2,

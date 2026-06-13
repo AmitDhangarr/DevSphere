@@ -1,4 +1,3 @@
-import cvPdf from "@/assets/files/cv_pdf/Niladri_Chatterjee(CV).pdf";
 import { VercelLogo } from "@/components/TechLogos";
 import { CONTACT_INFO } from "@/config/contact";
 import { fetcher, formatRepoCount, isTouchDevice } from "@/utils/helpers";
@@ -49,7 +48,7 @@ const Home = () => {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center px-4 mt-7 sm:mt-0 md:mt-3 lg:mt-5">
+    <div className="min-h-screen flex items-center justify-center px-4 mt-10 sm:mt-5 md:mt-5 lg:mt-20">
       <div className="text-center relative z-10 max-w-4xl mx-auto">
         <motion.h1
           className="text-4xl sm:text-6xl md:text-8xl font-bold mb-4 sm:mb-6 relative tracking-tighter"
@@ -66,7 +65,7 @@ const Home = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          I design & code for web
+          I designs real products, delivers with AI and code for web
         </motion.h2>
 
         <motion.p

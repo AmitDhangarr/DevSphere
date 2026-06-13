@@ -1,4 +1,7 @@
 import project from "../assets/projects_img/project.webp"
+import flipkart from "../assets/projects_img/flipkart.png"
+import shopco from "../assets/projects_img/shopco.png"
+import taskon from "../assets/projects_img/taskon.png"
 import { ScrollAnimation } from "@/components/ScrollAnimation";
 import { ExternalLink, Github } from "lucide-react";
 
@@ -55,7 +58,7 @@ const projects = [
     title: "ShopCo",
     description:
       "Shopco is a modern fashion store application for browsing and shopping the latest clothing and accessories.",
-    image: project,
+    image: shopco,
     github: "https://github.com/AmitDhangarr/ShopCo",
     live: "https://shop-co-iota.vercel.app/",
     tags: ["React.js", "Tailwind CSS", "ReduxToolkit", "E-Commerce", "Responsive"],
@@ -65,10 +68,20 @@ const projects = [
     title: "Flipkart",
     description:
       "A Flipkart clone developed using React to simulate an e-commerce shopping experience.",
-    image: project,
-    github: "https://github.com/niladri-1/Flipkart-Clone",
+    image: flipkart,
+    github: "https://github.com/AmitDhangarr/Flipkart-Clone",
     live: "project/live",
     tags: ["React.js", "Tailwind CSS", "UI/UX", "ProtoTyping", "ReduxToolkit"],
+  },
+  {
+    id: 6,
+    title: "Taskon",
+    description:
+      "A Flipkart clone developed using React to simulate an e-commerce shopping experience.",
+    image: taskon,
+    github: "https://github.com/AmitDhangarr/Taskon",
+    live: "",
+    tags: ["HTML", "CSS", "UI/UX", "JavaScript", "Typescript"],
   },
 ];
 

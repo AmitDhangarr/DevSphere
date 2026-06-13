@@ -11,8 +11,6 @@ import {
 import { ScrollAnimation } from "@/components/ScrollAnimation";
 import collegeImg from "@/assets/education/college_img.avif";
 import schoolImg from "@/assets/education/school_img.jpg";
-import bTechPdf from "@/assets/files/education_pdf/B Tech.pdf";
-import hsMarkSheetPdf from "@/assets/files/education_pdf/HS MARK SHEET.pdf";
 
 const educationData = [
   {

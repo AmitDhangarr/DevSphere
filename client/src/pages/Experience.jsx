@@ -7,14 +7,7 @@ import {
   ArrowRight,
 } from "lucide-react";
 import { ScrollAnimation } from "@/components/ScrollAnimation";
-import codeAlphaImg from "@/assets/experience/codeAlpha_page.jpg";
-import bharatInternImg from "@/assets/experience/bharatIntern_page.jpg";
-import codeClauseImg from "@/assets/experience/codeClause_page.jpg";
-import oasisInfobyteImg from "@/assets/experience/oasisInfobyte_page.jpg";
-import codeAlphaPdf from "@/assets/files/experience_pdf/codeAlpha.pdf";
-import bharatInternPdf from "@/assets/files/experience_pdf/bharatIntern.pdf";
-import codeClausePdf from "@/assets/files/experience_pdf/codeClause.pdf";
-import oasisInfobytePdf from "@/assets/files/experience_pdf/oasisInfobyte.pdf";
+import certificate from "../assets/experience/certificate.webp"
 
 const experiences = [
   {
@@ -24,7 +17,7 @@ const experiences = [
     location: "Remote",
     period: "Mar 2026 - May 2026",
     type: "Internship",
-    image: codeAlphaImg,
+    image: certificate,
     certificateUrl: "experience/certificate",
     description: [
       "Optimized web application performance with JavaScript and React.js, achieving a 98% error-free rate",

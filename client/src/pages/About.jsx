@@ -1,5 +1,4 @@
-import cvPdf from "@/assets/files/cv_pdf/Niladri_Chatterjee(CV).pdf";
-import profileImg from "@/assets/profile/profile.png";
+import profileImg from "@/assets/profile/profile.jpeg";
 import { ScrollAnimation } from "@/components/ScrollAnimation";
 import { motion } from "framer-motion";
 import { Briefcase, Code2, Globe, GraduationCap } from "lucide-react";
@@ -49,7 +48,7 @@ const About = () => {
 
       <div className="grid md:grid-cols-2 gap-8">
         <ScrollAnimation>
-          <div className="aspect-square overflow-hidden rounded-2xl">
+          <div className="aspect-auto overflow-hidden rounded-2xl">
             <img
               src={profileImg}
               alt="Amit Dhangar"

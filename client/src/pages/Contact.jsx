@@ -19,7 +19,7 @@ import { useEffect, useRef, useState } from "react";
 
 const API_URL = import.meta.env.VITE_API_URL;
 const INITIAL_FORM = { name: "", email: "", subject: "", message: "" };
-const PENDING_DURATION = 30;
+const PENDING_DURATION = 10;
 
 const Contact = () => {
   const [formData, setFormData] = useState(INITIAL_FORM);

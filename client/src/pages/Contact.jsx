@@ -57,6 +57,8 @@ const Contact = () => {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(data),
       });
+      console.log(response);
+      
       const result = await response.json();
       if (response.ok && result.success) {
         setSubmitStatus("success");

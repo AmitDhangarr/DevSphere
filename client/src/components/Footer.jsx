@@ -34,7 +34,7 @@ const Footer = () => {
               </span>
             </Link>
             <p className="text-sm text-gray-400">
-              Software Developer based in Gurgoan, HR, India.
+              Software Developer based in Etawah, Uttar Pradesh, India.
             </p>
           </div>
 

@@ -38,7 +38,7 @@ const educationData = [
   {
     id: 2,
     school: "Suditi Global Academy",
-    location: "Etawah, UP, India",
+    location: "Etawah, Uttar Pradesh, India",
     duration: "April 2023 - March 2024",
     degree: "Senior Secondary (CBSE)",
     grade: "Percentage: 85.16%",

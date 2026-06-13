@@ -3,7 +3,7 @@ export const CONTACT_INFO = {
   phone: "+91 9411XXXX11",
   phoneRaw: "+9411XXXX11",
   whatsapp: "+9411XXXX11",
-  location: "Gurgaon,Haryana,India",
+  location: "Etawah,Uttar Pradesh,India",
   timezone: "IST (UTC+5:30)",
   github: "https://github.com/AmitDhangarr",
   linkedin: "https://linkedin.com/in/amitdhangarr",

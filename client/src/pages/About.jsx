@@ -33,7 +33,7 @@ const interests = [
 ];
 
 const quickFacts = [
-  "Based in Gurgoan, HR, India",
+  "Based in Etawah, Uttar Pradesh, India",
   "BCA in Computer Science",
   "CGPA:6.74",
 ];

@@ -1,8 +1,7 @@
 <div align="center">
 
-# 🚀 Niladri Chatterjee — Portfolio
+# 🚀 Amit Dhangar — Portfolio
 
-[![Live](https://img.shields.io/badge/Live-niladri1.vercel.app-black?style=for-the-badge&logo=vercel)](https://niladri1.vercel.app)
 [![React](https://img.shields.io/badge/React-18-61DAFB?style=for-the-badge&logo=react)](https://react.dev)
 [![Node.js](https://img.shields.io/badge/Node.js-Express-339933?style=for-the-badge&logo=node.js)](https://nodejs.org)
 [![MongoDB](https://img.shields.io/badge/MongoDB-Atlas-47A248?style=for-the-badge&logo=mongodb)](https://mongodb.com)
@@ -150,12 +149,12 @@ VITE_TRACKER_API_URL=http://localhost:5000/api/v1
 
 ## 📞 Contact
 
-[![Email](https://img.shields.io/badge/Email-code.niladri%40gmail.com-red?style=flat-square&logo=gmail)](mailto:code.niladri@gmail.com)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-niladri1-blue?style=flat-square&logo=linkedin)](https://linkedin.com/in/niladri1)
-[![GitHub](https://img.shields.io/badge/GitHub-niladri--1-black?style=flat-square&logo=github)](https://github.com/niladri-1)
+[![Email](https://img.shields.io/badge/Email-code.niladri%40gmail.com-red?style=flat-square&logo=gmail)](mailto:amitdhangar.dev@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-niladri1-blue?style=flat-square&logo=linkedin)](https://linkedin.com/in/amitdhangarr)
+[![GitHub](https://img.shields.io/badge/GitHub-niladri--1-black?style=flat-square&logo=github)](https://github.com/AmitDhangarr)
 
 ---
 
 <div align="center">
-  <sub>Built with ❤️ by Niladri Chatterjee</sub>
+  <sub>Built with ❤️ by Amit Dhangar</sub>
 </div>

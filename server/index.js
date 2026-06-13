@@ -13,7 +13,7 @@ if (missing.length) {
 
 const start = async () => {
   await connectDB();
-  app.listen(PORT, () => {
+  app.listen(PORT,'0.0.0.0',() => {
     console.log(`[server] running on port ${PORT} in ${process.env.NODE_ENV} mode`);
   });
 };

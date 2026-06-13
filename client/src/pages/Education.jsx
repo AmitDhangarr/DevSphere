@@ -9,7 +9,7 @@ import {
   ExternalLink,
 } from "lucide-react";
 import { ScrollAnimation } from "@/components/ScrollAnimation";
-import collegeImg from "@/assets/education/college_img.jpg";
+import collegeImg from "@/assets/education/college_img.avif";
 import schoolImg from "@/assets/education/school_img.jpg";
 import bTechPdf from "@/assets/files/education_pdf/B Tech.pdf";
 import hsMarkSheetPdf from "@/assets/files/education_pdf/HS MARK SHEET.pdf";
@@ -17,44 +17,42 @@ import hsMarkSheetPdf from "@/assets/files/education_pdf/HS MARK SHEET.pdf";
 const educationData = [
   {
     id: 1,
-    school: "Bengal College of Engineering and Technology",
-    location: "Durgapur, WB, India",
-    duration: "July 2020 - June 2024",
-    degree: "B.Tech (Computer Science and Engineering)",
-    grade: "CGPA: 8.48 (80%)",
+    school: "Chaudhary Charan Singh Degree College",
+    location: "Etawah, Uttar Pradesh, India",
+    duration: "July 2024 - Present",
+    degree: "Bachelor's of Computer Applications (BCA)",
+    grade: "CGPA: 6.74 (65%)",
     image: collegeImg,
-    resultUrl: bTechPdf,
+    resultUrl: "https://drive.google.com/file/d/1fNnGkvLNkTymHXaT_VslN3p0_rsMmRhi/view?usp=drive_link",
     coursework: [
       "Software Development",
       "DSA",
       "OOPs",
       "DBMS",
-      "AI",
-      "ML",
       "OS",
       "Networking",
     ],
     description:
-      "During my time at BCET, I built a strong foundation in computer science, focusing on software development, problem-solving, and real-world applications. Engaging in hands-on projects, internships, and coding challenges enhanced my technical and analytical skills.",
+      "Currently pursuing a Bachelor of Computer Applications at CCSPG Heworna, building on a strong academic foundation in computer science with a focus on software development, problem-solving, and real-world applications. Engaging in hands-on projects, coding challenges, and practical learning experiences has sharpened technical and analytical skills throughout this journey.",
   },
   {
     id: 2,
-    school: "Birsingha Bhagabati Vidyalaya (H.S)",
-    location: "Medinipur, WB, India",
-    duration: "June 2018 - July 2019",
-    degree: "Higher Secondary (WBSC)",
-    grade: "Percentage: 79%",
+    school: "Suditi Global Academy",
+    location: "Etawah, UP, India",
+    duration: "April 2023 - March 2024",
+    degree: "Senior Secondary (CBSE)",
+    grade: "Percentage: 85.16%",
     image: schoolImg,
-    resultUrl: hsMarkSheetPdf,
+    resultUrl:"https://drive.google.com/file/d/1Y9dkpOyJjkTTSaoDvCHkCGkB5Y-u0Zcs/view?usp=drive_link",
     subjects: [
-      "Physics",
-      "Chemistry",
-      "Mathematics",
-      "Biology",
+      "Accountacy",
+      "Economics",
+      "Business Studies",
+      "Hindustani Vocal Music",
       "Computer Science",
     ],
     description:
-      "My higher secondary education laid the foundation for my technical journey, strengthening analytical thinking and problem-solving abilities. The strong emphasis on mathematics and computer science shaped my passion for software development.",
+      "My Senior Secondary education laid the foundation for my technical journey, strengthening analytical thinking and problem-solving abilities. The strong emphasis on Computer Science during this phase ignited my passion for software development.",
   },
 ];
 

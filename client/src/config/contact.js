@@ -1,14 +1,14 @@
 export const CONTACT_INFO = {
   email: "amitdhangar.dev@gmail.com",
-  phone: "+91 9411401611",
-  phoneRaw: "+9411401611",
-  whatsapp: "+9411401611",
+  phone: "+91 9411XXXX11",
+  phoneRaw: "+9411XXXX11",
+  whatsapp: "+9411XXXX11",
   location: "Gurgaon,Haryana,India",
   timezone: "IST (UTC+5:30)",
   github: "https://github.com/AmitDhangarr",
   linkedin: "https://linkedin.com/in/amitdhangarr",
   twitter: "AmitDhangarr",
-  linkedInFollowers: "1000+",
+  linkedInFollowers: "700+",
 };
 
 export const OFFICE_HOURS = {

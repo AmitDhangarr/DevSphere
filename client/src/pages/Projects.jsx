@@ -1,67 +1,74 @@
-import project1 from "@/assets/projects_img/project-1.png";
-import project2 from "@/assets/projects_img/project-2.png";
-import project3 from "@/assets/projects_img/project-3.png";
-import project4 from "@/assets/projects_img/project-4.png";
+import project from "../assets/projects_img/project.webp"
 import { ScrollAnimation } from "@/components/ScrollAnimation";
 import { ExternalLink, Github } from "lucide-react";
 
 const projects = [
   {
     id: 1,
-    title: "E-Mail Spam Detector",
+    title: "CodeBuddy",
     description:
-      "AI-powered Gmail client that detects spam, summarises emails, and lets you chat with your inbox — built with React, Node.js & Gemini API.",
-    image: project4,
-    github: "https://github.com/niladri-1/EMail-Spam-Detector",
-    live: "https://spam-detector1.vercel.app",
+      "A developer-focused platform that connects people based on skills, goals, and collaboration style. Built a matching algorithm that goes beyond keyword filtering surfacing genuinely relevant profiles through weighted skill comparison.",
+    image: project,
+    github: "https://github.com/AmitDhangarr/CodeBuddy",
+    live: "project/live",
     tags: [
-      "MongoDB",
-      "Express",
-      "React",
-      "Node",
-      "JavaScript",
-      "Gmail API",
-      "OAuth2",
+      "Next.js",
+      "Supabase",
+      "Postgres",
+      "OAuth",
+      "Gemini API",
+      "Zustand",
+      "JWT",
     ],
   },
   {
     id: 2,
-    title: "Book Store",
+    title: "ShadiSync",
     description:
-      "A modern Book Management System built with the MERN stack (React 19 & Tailwind 4.0). Features secure JWT authentication, protected routes, and full CRUD functionality.",
-    image: project3,
-    github: "https://github.com/niladri-1/Bookstore-Auth-MERN",
-    live: "https://curd-auth-app.vercel.app",
+      "A RESTful API for event management platform that handles everything from creating events and managing invites to tracking expenses and logging gifts all in one place.",
+    image: project,
+    github: "https://github.com/AmitDhangarr/ShadiSync",
+    live: "project/live",
     tags: [
       "MongoDB",
       "Express",
-      "React",
       "Node",
-      "Tailwind",
       "JWT",
       "Bcrypt",
       "REST API",
+      "Multer",
+      "OOPS"
     ],
   },
   {
     id: 3,
-    title: "NetScan-Pro",
+    title: "GitScope",
     description:
-      "Bash-based network scanning tool that provides live host discovery, port scanning, traceroute, and ping tests, featuring visually appealing ASCII banners and 80+ stars on GitHub.",
-    image: project2,
-    github: "https://github.com/niladri-1/NetScan-Pro",
+      "An analytics platform that lets you deep-dive into any GitHub profile — explore contribution graphs, repository metrics, and language trends, then compare profiles head-to-head for actionable insights.",
+    image: project,
+    github: "https://github.com/niladri-1/GitScope",
     live: "",
-    tags: ["Linux", "Bash", "Networking", "Monitoring", "NMAP", "Scripting"],
+    tags: ["Next.js", "FastAPI", "OAuth", "JWT", "GSAP", "Python"],
   },
   {
     id: 4,
-    title: "Student Portfolio",
+    title: "ShopCo",
     description:
-      "A professional portfolio template for engineering students. Easy to set up, fully customizable, and perfect for showcasing projects and skills.",
-    image: project1,
-    github: "https://github.com/niladri-1/Frontend-develope-portfolio",
-    live: "https://techfolio1.vercel.app",
-    tags: ["Next", "Tailwind CSS", "TypeScript", "ThreeJS", "Responsive"],
+      "Shopco is a modern fashion store application for browsing and shopping the latest clothing and accessories.",
+    image: project,
+    github: "https://github.com/AmitDhangarr/ShopCo",
+    live: "https://shop-co-iota.vercel.app/",
+    tags: ["React.js", "Tailwind CSS", "ReduxToolkit", "E-Commerce", "Responsive"],
+  },
+  {
+    id: 5,
+    title: "Flipkart",
+    description:
+      "A Flipkart clone developed using React to simulate an e-commerce shopping experience.",
+    image: project,
+    github: "https://github.com/niladri-1/Flipkart-Clone",
+    live: "project/live",
+    tags: ["React.js", "Tailwind CSS", "UI/UX", "ProtoTyping", "ReduxToolkit"],
   },
 ];
 

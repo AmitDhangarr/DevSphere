@@ -75,8 +75,8 @@ const Home = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          Software Developer specializing in Full Stack Development with
-          expertise in React.js, Node.js and modern Web Technologies.
+          Software Developer specializing in Cloud-Native Full Stack Development with
+          expertise in MERN, Next.js, Node.js and modern Web Technologies.
         </motion.p>
 
         <motion.div
@@ -87,7 +87,7 @@ const Home = () => {
         >
           <div className="flex justify-center space-x-3 sm:space-x-4">
             <a
-              href={cvPdf}
+              href={"https://drive.google.com/file/d/1fIIF0cU9-ox3ESNrw6qjJGkK8shPGhK9/view?usp=drive_link"}
               target="_blank"
               rel="noopener noreferrer"
               className="px-4 sm:px-6 py-2.5 sm:py-3 bg-white text-black rounded-full text-sm sm:text-base font-medium hover:bg-gray-100 transition-colors flex items-center gap-2"

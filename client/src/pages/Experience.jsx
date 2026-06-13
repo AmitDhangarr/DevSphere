@@ -19,59 +19,16 @@ import oasisInfobytePdf from "@/assets/files/experience_pdf/oasisInfobyte.pdf";
 const experiences = [
   {
     id: 1,
-    title: "Software Engineering Intern",
-    company: "Code Alpha",
+    title: "Frontend Developer Intern",
+    company: "Webarclight",
     location: "Remote",
-    period: "Jun 2024 - Aug 2024",
+    period: "Mar 2026 - May 2026",
     type: "Internship",
     image: codeAlphaImg,
-    certificateUrl: codeAlphaPdf,
+    certificateUrl: "experience/certificate",
     description: [
       "Optimized web application performance with JavaScript and React.js, achieving a 98% error-free rate",
       "Implemented advanced features on a React.js platform, resulting in a 40% surge in user interaction",
-    ],
-  },
-  {
-    id: 2,
-    title: "Full Stack Development Intern",
-    company: "Bharat Intern",
-    location: "Remote",
-    period: "Jun 2024 - Jul 2024",
-    type: "Internship",
-    image: bharatInternImg,
-    certificateUrl: bharatInternPdf,
-    description: [
-      "Designed 3 websites with CSS, JavaScript, React.js, Node.js and MongoDB, resulting in a 30% increase in user engagement",
-      "Built a money tracker app using HTML, CSS, React.js, Node.js, and MongoDB, improving user financial tracking by 25%",
-    ],
-  },
-  {
-    id: 3,
-    title: "Web Applications Intern",
-    company: "CodeClause",
-    location: "Remote",
-    period: "Jun 2023 - Jul 2023",
-    type: "Internship",
-    image: codeClauseImg,
-    certificateUrl: codeClausePdf,
-    description: [
-      "Engineered a real-time collaborative document editor using Next.js, TypeScript, and Liveblocks, reducing latency by 30%",
-      "Implemented and optimized a personal portfolio with Next.js and Tailwind CSS, improving performance by 40%",
-    ],
-  },
-  {
-    id: 4,
-    title: "Junior Web Developer",
-    company: "Oasis Infobyte",
-    location: "Remote",
-    period: "Jun 2023 - Jul 2023",
-    type: "Internship",
-    image: oasisInfobyteImg,
-    certificateUrl: oasisInfobytePdf,
-    description: [
-      // TODO: Replace with your actual Oasis Infobyte work description
-      "Developed responsive web interfaces using HTML, CSS, and JavaScript, improving cross-browser compatibility across all target platforms",
-      "Built and deployed a task management web application with full CRUD functionality, enhancing team productivity tracking by 35%",
     ],
   },
 ];

@@ -1,5 +1,5 @@
 import cvPdf from "@/assets/files/cv_pdf/Niladri_Chatterjee(CV).pdf";
-import profileImg from "@/assets/profile/profile.jpg";
+import profileImg from "@/assets/profile/profile.png";
 import { ScrollAnimation } from "@/components/ScrollAnimation";
 import { motion } from "framer-motion";
 import { Briefcase, Code2, Globe, GraduationCap } from "lucide-react";
@@ -8,8 +8,8 @@ import { Link } from "react-router-dom";
 const achievements = [
   {
     icon: <Code2 className="w-6 h-6" />,
-    title: "6+ Projects",
-    description: "Completed full-stack web applications",
+    title: "7+ Projects",
+    description: "Completed across frontend,backend and fullstack.",
   },
   {
     icon: <Briefcase className="w-6 h-6" />,
@@ -18,7 +18,7 @@ const achievements = [
   },
   {
     icon: <GraduationCap className="w-6 h-6" />,
-    title: "8.48 CGPA",
+    title: "6.74 CGPA",
     description: "Academic excellence",
   },
 ];
@@ -35,7 +35,7 @@ const interests = [
 const quickFacts = [
   "Based in Gurgoan, HR, India",
   "BCA in Computer Science",
-  "CGPA: 8.48",
+  "CGPA:6.74",
 ];
 
 const About = () => {
@@ -54,7 +54,7 @@ const About = () => {
               src={profileImg}
               alt="Amit Dhangar"
               width={600}
-              height={600}
+              height={1200}
               className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
             />
           </div>
@@ -63,23 +63,22 @@ const About = () => {
         <ScrollAnimation className="space-y-6">
           <div className="space-y-4">
             <p className="text-gray-300 leading-relaxed">
-              Hi! I'm a passionate full-stack developer with expertise in
-              building modern web applications. My journey in tech started
-              during my college years, where I discovered my love for creating
-              innovative solutions through code.
+              Hi! I'm a cloud-native full-stack developer passionate about building
+              scalable, production-grade web applications. My journey in tech began
+              during college, where I discovered my love for solving real-world problems
+              through clean, efficient code.
             </p>
             <p className="text-gray-300 leading-relaxed">
-              I completed my B.Tech in Computer Science, maintaining a strong
-              academic record while actively engaging in real-world projects and
-              internships. This blend of theoretical knowledge and practical
-              experience has shaped my approach to problem-solving and software
-              development.
+              I'm currently pursuing my BCA, where I've been able to complement my
+              academic foundation with hands-on projects and real-world experience.
+              That blend of core computer science concepts and practical engineering
+              continues to shape how I think about building software.
             </p>
             <p className="text-gray-300 leading-relaxed">
-              I specialize in React, Node.js, and modern web technologies, with
-              a keen interest in creating performant and user-friendly
-              applications. My experience includes working with various startups
-              and contributing to open-source projects.
+              I specialize in the MERN stack with TypeScript, backed by solid experience
+              deploying and managing infrastructure on AWS and GCP. Whether it's building
+              RESTful APIs, designing cloud architectures, or crafting responsive
+              frontends, I enjoy owning the full stack — from database to deployment.
             </p>
           </div>
 
@@ -102,7 +101,7 @@ const About = () => {
 
           <div className="flex justify-start space-x-4">
             <a
-              href={cvPdf}
+              href={"https://drive.google.com/file/d/1fIIF0cU9-ox3ESNrw6qjJGkK8shPGhK9/view?usp=drive_link"}
               target="_blank"
               rel="noopener noreferrer"
               className="px-6 py-3 bg-white text-black rounded-full font-medium hover:bg-gray-100 transition-colors"

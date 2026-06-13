@@ -45,7 +45,6 @@ const skills = [
       { name: "JavaScript", icon: <JavaScriptLogo /> },
       { name: "TypeScript", icon: <TypeScriptLogo /> },
       { name: "Python", icon: <PythonLogo /> },
-      { name: "Bash", icon: <BashLogo /> },
     ],
   },
   {
@@ -73,7 +72,7 @@ const skills = [
     icon: <Database className="w-6 h-6" />,
     items: [
       { name: "MongoDB", icon: <MongoDBLogo /> },
-      { name: "Cloudinary", icon: <Cloud className="w-4 h-4" /> },
+      { name: "GCP", icon: <Cloud className="w-4 h-4" /> },
       { name: "AWS", icon: <AWSLogo /> },
     ],
   },

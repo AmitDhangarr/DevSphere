@@ -4,7 +4,11 @@ const connectDB = require('./src/config/db');
 const cors = require('cors')
 
 app.use(cors({
-  origin: ['https://amitdhangar.in', 'https://dev-sphere-mu.vercel.app/'],
+  origin: [
+    'https://amitdhangar.in',
+    'https://www.amitdhangar.in',
+    'https://dev-sphere-mu.vercel.app'
+  ],
   credentials: true
 }));
 

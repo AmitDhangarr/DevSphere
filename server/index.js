@@ -1,6 +1,12 @@
 require('dotenv').config();
 const app = require('./src/app');
 const connectDB = require('./src/config/db');
+const cors = require('cors')
+
+app.use(cors({
+  origin: ['https://amitdhangar.in', 'https://dev-sphere-mu.vercel.app/'],
+  credentials: true
+}));
 
 const PORT = process.env.PORT || 3000;
 
@@ -17,6 +23,7 @@ const start = async () => {
     console.log(`[server] running on port ${PORT} in ${process.env.NODE_ENV} mode`);
   });
 };
+
 
 start().catch((err) => {
   console.error('[server] failed to start:', err.message);

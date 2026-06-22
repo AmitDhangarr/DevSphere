@@ -100,7 +100,7 @@ const About = () => {
 
           <div className="flex justify-start space-x-4">
             <a
-              href={"https://drive.google.com/file/d/1fIIF0cU9-ox3ESNrw6qjJGkK8shPGhK9/view?usp=drive_link"}
+              href={"https://drive.google.com/file/d/1S06lOU6OA1T_Id4dV1KGi86oRVVwe6t5/view?usp=sharing"}
               target="_blank"
               rel="noopener noreferrer"
               className="px-6 py-3 bg-white text-black rounded-full font-medium hover:bg-gray-100 transition-colors"

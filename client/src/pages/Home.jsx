@@ -15,7 +15,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import useSWR from "swr";
 
-const GITHUB_API = `https://api.github.com/users/${import.meta.env.VITE_GITHUB_USERNAME || "niladri-1"}`;
+const GITHUB_API = `https://api.github.com/users/${import.meta.env.VITE_GITHUB_USERNAME || "AmitDhangarr"}`;
 
 const Home = () => {
   const [copied, setCopied] = useState(false);
@@ -86,7 +86,7 @@ const Home = () => {
         >
           <div className="flex justify-center space-x-3 sm:space-x-4">
             <a
-              href={"https://drive.google.com/file/d/1fIIF0cU9-ox3ESNrw6qjJGkK8shPGhK9/view?usp=drive_link"}
+              href={"https://drive.google.com/file/d/1S06lOU6OA1T_Id4dV1KGi86oRVVwe6t5/view?usp=sharing"}
               target="_blank"
               rel="noopener noreferrer"
               className="px-4 sm:px-6 py-2.5 sm:py-3 bg-white text-black rounded-full text-sm sm:text-base font-medium hover:bg-gray-100 transition-colors flex items-center gap-2"

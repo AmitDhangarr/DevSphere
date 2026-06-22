@@ -18,7 +18,7 @@ const experiences = [
     period: "Mar 2026 - May 2026",
     type: "Internship",
     image: certificate,
-    certificateUrl: "experience/certificate",
+    certificateUrl: "https://drive.google.com/file/d/1j1IJVIiCTRtBDeNIMpAhuaBgHQAI-ih6/view?usp=drive_link",
     description: [
       "Optimized web application performance with JavaScript and React.js, achieving a 98% error-free rate",
       "Implemented advanced features on a React.js platform, resulting in a 40% surge in user interaction",

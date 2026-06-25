@@ -77,7 +77,7 @@ const projects = [
     id: 6,
     title: "Taskon",
     description:
-      "A Flipkart clone developed using React to simulate an e-commerce shopping experience.",
+      "Taskon is a simple and modern task management app built with TypeScript to keep your work organized and your productivity on track.",
     image: taskon,
     github: "https://github.com/AmitDhangarr/Taskon",
     live: "",
